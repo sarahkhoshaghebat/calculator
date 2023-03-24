@@ -1,8 +1,8 @@
-const display =document.querySelector("#display");
+const display = document.querySelector("#display");
 const buttons = document.querySelector("button");
 
-button.forEach(btn => {
-    btn.addEventLisener("click",()=> {
+buttons.forEach(btn => {
+    btn.addEventLisener("click", () => {
         if(btn.id === "=") {
             display.value = eval(display.value);
         } else if (btn.id === "ac") {
